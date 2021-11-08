@@ -30,7 +30,7 @@ if msg_len:
     cipher_rsa = PKCS1_OAEP.new(KEY)
 
 while True:
-    RawMessage = input('>>> ')
+    RawMessage = input('=> ')
 
     message = cipher_rsa.encrypt(RawMessage.encode('utf-8'))
     msg_len = len(message)
